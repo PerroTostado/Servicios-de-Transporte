@@ -1,7 +1,7 @@
 
 package Booking;
 
-public class TransportService {
+public abstract class TransportService {
     private int id;
     private String origin;
     private String destination;
@@ -40,7 +40,6 @@ public class TransportService {
     }
     
     //Métodos Get
-    
     public int getId(){
         return this.id;
     }
@@ -49,8 +48,23 @@ public class TransportService {
         return this.origin;
     }
     
-    public int getDestination(){
-        return this.id;
+    public String getDestination(){
+        return this.destination;
     }
     
+    public double getPrice(){
+        return this.price;
+    }
+    
+    @Override
+    public String toString(){
+        return "id: " + this.getId() + 
+               "\tOrigin: " + this.getOrigin() + 
+               "\tDestination: " + this.getDestination() + 
+               "\tPrice: " + this.getPrice() + "\t";
+    }
+    
+    //Métodos abtractos
+    public abstract String getServiceInformation();
+    public abstract String getLuggageInformation();
 }
