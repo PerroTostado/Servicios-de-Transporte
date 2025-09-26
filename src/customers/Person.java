@@ -30,7 +30,7 @@ protected final int setAge(){
 }
 @Override
 public String toString(){
-    String XD= "";
+    String XD= "Name: " + this.name + "Age: " + this.age;
     return XD;
 }
 }
