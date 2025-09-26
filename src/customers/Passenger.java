@@ -19,7 +19,7 @@ protected final String getPassportNumber(){
     return this.passportNumber;
 }
 public void addTransportService(TransportService transportService){
-    this.transportService =transportService;
+    this.transportService = transportService;
 }
 @Override
 public String toString(){
