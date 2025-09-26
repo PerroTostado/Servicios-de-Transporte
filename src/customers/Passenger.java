@@ -13,7 +13,6 @@ public Passenger(String name, int age, String passportNumber){
     this.passportNumber=passportNumber;
 }
 protected final void setPassportNumber(String passportNumer){
-    
     this.passportNumber = passportNumber;
 }
 protected final String getPassportNumber(){
