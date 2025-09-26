@@ -3,7 +3,7 @@ package customers;
 
 public class Passenger extends Person {
     private String passportNumber;
-    
+    private TransportService transportService;
 public Passenger(){
     
 }   
@@ -15,6 +15,9 @@ protected final void setPassportNumber(String passportNumer){
 }
 protected final String getPassportNumber(){
     return this.passportNumber;
+}
+public void addTransportService(TransportService transportService){
+    this.transportService.add(transportService);
 }
 @Override
 public String toString(){
