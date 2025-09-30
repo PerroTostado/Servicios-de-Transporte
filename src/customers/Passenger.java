@@ -1,6 +1,8 @@
 
 package customers;
 
+import com.sun.jdi.connect.spi.TransportService;
+
 public class Passenger extends Person {
     private String passportNumber;
     private TransportService transportService;
@@ -17,7 +19,7 @@ protected final String getPassportNumber(){
     return this.passportNumber;
 }
 public void addTransportService(TransportService transportService){
-    this.transportService.add(transportService);
+    this.transportService=transportService;
 }
 @Override
 public String toString(){
